@@ -290,11 +290,12 @@ footer {
 }
 
 .footerNavigations {
+    width: 30%;
     float: left;
     display: inline-block;
     margin-right: auto;
     align-items: center;
-    margin-left: 100px;
+    margin-left: 2.5%;
     margin-top: 20px;
     
 }
@@ -320,45 +321,116 @@ footer {
     margin-left: 50px; 
 }
 
+.tw {
+    margin-left: 32.5%;
+}
+
 .middleBottom {
+    width: 30%;
     margin-top: 35px;
-    margin-left: 13%;
+    margin-left: 2.5%;
+    margin-right: 2.5%;
     height: 120px;
     display: inline-block;
 }
 
-.leftCorner {
+.rightCorner {
+    width: 30%;
     display: inline-block;
     text-align: right;
     color: white;
     float: right;
     height: 120px;
     line-height: 120px;
-    margin-right: 100px;
+    margin-right: 2.5%;
 }
 /* end of footer */
-/*to delete later and add border to Top */
-/* 
-#TOP {
-    background-color: #2de8df;
-    height: 10px;
-    width: 100%;
+
+/*Media quaries for responsive for max width 575px*/ 
+
+@media only screen and (max-width: 575px) {
+    
+    .NavigationButton, .LogoSpan{
+        width: auto;
+        height: auto;
+        display: block;
+        float: none;
+        vertical-align: middle;
+    }
+    
+    .NavigationButton {
+        height: 70px;
+        line-height: 70px;
+    }
 }
 
+/*Media quaries for responsive for max width 940px*/
 
-.Head {
-    float: right;
-    width: 200px;
-    padding-left: 14px;
-    padding-bottom: 10px;
-    vertical-align: top;
+@media only screen and (max-width: 940px) {
+    
+    .CONTENT {
+        width: auto;
+        height: auto;
+    }
+    
+    .firstColumn, .secondColumn, .thirdColumn {
+        display: block;
+        margin: auto;
+        float: none;
+    }
+    
+    form {
+        height: auto;
+        width: auto;
+    }
+    
+    .Input, .msg {
+        float: none;
+        display: block;
+        margin: auto;
+    }
+    
+    .sendMessage {
+        width: auto;
+        margin-top: -160px;
+    }
+    
+    #submit {
+        margin: auto;
+        float: none;
+        display: block;
+    }
 }
 
-.bottom {
-    vertical-align: bottom;
-    margin-top: 130px;
-}
+/*Media quaries for responsive for max width 1122 px*/
 
-#phone {
-    margin-bottom: none;
+/*facebook and twitter breaks when the width is small */
+
+@media only screen and (max-width: 1122px) {
+    
+    footer {
+        height: auto;
+        padding-top: 20px;;
+    }
+    
+    .footerNavigations, .middleBottom, .rightCorner {
+        display: block;
+        float: none;
+        width: auto;
+    }
+    
+    .rightCorner {
+        text-align: center;
+        margin-right: 0px;
+    }
+    
+    .right {
+        margin-right: 2.5%; 
+    }
+    
+    .middleBottom {
+        margin-left: 5%;
+        width: 60%;
+    }
+    
 }
