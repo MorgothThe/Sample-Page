@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>A Sample Page</title>
+         <link href="https://fonts.googleapis.com/css?family=Bree+Serif|Open+Sans" rel="stylesheet">
+        <link href="style.css" type="text/css" rel="stylesheet" />
+        <script
+        src="https://code.jquery.com/jquery-3.2.1.js"
+        integrity="sha256-DZAnKJ/6XZ9si04Hgrsxu/8s717jcIzLy3oi35EouyE="
+        crossorigin="anonymous">
+        </script>
+    </head>
+    
+    <body>
+        <header>
+            <nav>    <!-- First navigation but not so sure about whether it should be here since there is a logo image in here -->
+                <span class="NavigationButton">
+                    <a href="" class="NavButtonsLinks">Home</a>
+                </span>
+
+                <span class="NavigationButton">
+                    <a href="" class="NavButtonsLinks">Products</a>
+                </span>
+
+                <span class="LogoSpan">
+                    <img src="Images/logo.png" alt="This is logo image" title="logoImage" class="logo" width="120" height="120">
+                </span>
+
+                <span class="NavigationButton">
+                    <a href="" class="NavButtonsLinks">About us</a>
+                </span>
+
+                <span class="NavigationButton">
+                    <a href="" class="NavButtonsLinks">Contact</a>
+                </span>
+            </nav>
+            <hr/>
+        </header>
+        <main> 
+            <section class="HERO">
+                <h1>This is just a sample page</h1>
+                <div class='SamplePageButton'>push the button</div>
+            </section>
+            <hr/>
+            <section class="CONTENT">
+                <article class="firstColumn">
+                    <h3>A heading title</h3>
+                    <div class="articleHead">
+                        <img src="Images/textLayer.png" alt="This is a text layer image" title="textImage" class="articleImg" width="76" height="76">
+                        <span class="articleTopText">
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec quis felis fermentum, dictum odio ut.</p>
+                        </span>
+                    </div>
+                    <div class="articleBottom">
+                        <p id="leftText" class="articleText">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce eget ex nulla. Integer ullamcorper nibh lorem, ut porttitor mi sagittis eget. Aenean malesuada mattis justo, sed efficitur nisl fringilla eget. Integer a mi quis lectus vulputate tempus quis quis dui. Mauris suscipit euismod urna, eget feugiat tellus imperdiet vitae. Vestibulum.</p>
+                        <p><a id="leftClick" href="" class='readMore'>&mdash; read more</a></p>
+                    </div>
+                </article>
+
+                <article class="secondColumn">
+                    <h3>A much longer heading title</h3>
+                    <div class="articleHead">
+                        <img src="Images/textLayer.png" alt="This is a text layer image" title="textImage" class="articleImg" width="76" height="76">
+                        <span class="articleTopText">
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec quis felis fermentum, dictum odio ut.</p>
+                        </span>
+                    </div>
+                    <div class="articleBottom">
+                        <p id="middleText" class="articleText">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce eget ex nulla. Integer ullamcorper nibh lorem, ut porttitor mi sagittis eget. Aenean malesuada mattis justo, sed efficitur nisl fringilla eget. </p>
+                        <p><a id="middleClick" href="" class='readMore'>&mdash; read more</a></p>
+                    </div>
+                </article>
+
+                <article class="thirdColumn">
+                    <h3>A heading title</h3>
+                    <div class="articleHead">
+                        <img src="Images/textLayer.png" alt="This is a text layer image" title="textImage" class="articleImg" width="76" height="76">
+                        <span class="articleTopText">
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec quis felis fermentum, dictum odio ut.</p>
+                        </span>
+                    </div>
+                    <div class="articleBottom">
+                        <p id="rightText" class="articleText">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce eget ex nulla. Integer ullamcorper nibh lorem, ut porttitor mi sagittis eget. Aenean malesuada mattis justo, sed efficitur nisl fringilla eget. Integer a mi quis lectus vulputate tempus quis quis dui. Mauris suscipit euismod urna, eget feugiat tellus imperdiet vitae. Vestibulum.</p>
+                        <p><a id="rightClick" href="" class='readMore'>&mdash; read more</a></p>
+                    </div>
+                </article>
+            </section>
+            <hr />
+            <section class="CONTACT">
+                <h2>Contact us</h2>
+                <form action="http://">
+                    <span class="Input">
+                        <input type="text" placeholder="name" />
+                        <input type="email" placeholder="e-mail" />
+                        <input type="tel" placeholder="phone" />
+                    </span>
+                    <span class="msg">
+                        <textarea placeholder="your message"></textarea>
+                    </span>
+                    <div class="sendMessage">
+                        <input type="submit" id="submit" value="send message" />
+                    </div>
+                </form>         
+            </section>
+            
+        </main>
+        
+        <a href="" class="toTop">back to top</a>
+        
+        <footer>
+            <nav class="footerNavigations"> <!-- Not sure if using unordered list is better in here -->
+                <span class="left">
+                    <p><a href="">&mdash; home</a></p>
+                    <p><a href="">&mdash; products</a></p>
+                </span>
+                <span class="right">
+                    <p><a href="">&mdash; about us</a></p>
+                    <p><a href="">&mdash; contact</a></p>
+                </span>
+            </nav>
+            
+            <span class="middleBottom">
+                <img class='tw' src="Images/twitter.png" alt="Twitter image" title="Twitter Image">
+                <img class='fb' src="Images/facebook.png" alt="Facebook image" title="Facebook Image">
+            </span>
+            <span class="leftCorner">
+                <p>Copyright &copy; 2010 Sample &amp; Pack,Inc</p>
+            </span>
+        </footer>
+        <!-- Scripts --> 
+        <script type="text/javascript" src="Scripts/smoothscroll.js"></script>
+        <script type="text/javascript" src="Scripts/readmore.js"></script>
+        <script type="text/javascript" src="Scripts/Ipsum.js"></script>
+    </body>
+</html>
