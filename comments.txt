@@ -2,8 +2,12 @@ Time taken to finish the HTML and CSS part:-
 	HTML - 6 hours
 	CSS  - 8 hours
 
-For PHP, Ajax and Javascript. From Javascript tasks, I managed to do the first task. 
-	- Implementation of the smoothscroll to the top when clicked back to top button: 
-		i have set the time to reach the top for 1 second and also I am animating the html body part.
+Time taken to correct the project:-
+	HTML - 1 hour
+	CSS  - 5 hours
+
+Time taken to finish Javascript tasks:- 1 hour
+
+For the PHP tasks, I did not manage to establish the server on my laptop but I studied the basic syntax.
  
-I am willing to learn more and I did not manage to do all the tasks because of my university schedule and exam session. 
+I am willing to learn more and I am very determined to join the chop-chop company. 

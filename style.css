@@ -241,6 +241,7 @@ textarea {
     font-size: 14pt;
     box-shadow: inset 0px 0px 10px #dddddd;
 }
+
 .msg {
     width: 460px;
     float: right;
@@ -298,6 +299,10 @@ textarea {
 footer {
     height: 150px;
     background-color: black;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
 }
 
 .footer-navigations {
@@ -308,7 +313,6 @@ footer {
     align-items: center;
     margin-left: 2.5%;
     margin-top: 20px;
-    
 }
 
 .footer-navigations ul li {
@@ -323,12 +327,12 @@ footer {
 .left {
     display: inline-block;
     float: left;
-    margin-right: 150px;
+    margin-right: 10%;
 }
 
 .right {
     display: inline-block;
-    float: right;
+    float: left;
 }
 
 
@@ -363,20 +367,14 @@ footer {
 
 /*Media queries for responsive for max width 1122 px*/
 
-/*facebook and twitter breaks when the width is small */
-
 @media only screen and (max-width: 1122px) {
     
     footer {
         height: auto;
-        padding-top: 20px;
-        display: flex;
-        flex-direction: row;
-        justify-content: center
     }
     
-    .footer-navigations, .right-corner {
-        flex-grow: 2;
+   .footer-navigations, .right-corner {
+        flex-grow: 2; 
     }
     
     .middle-bottom {
@@ -395,7 +393,12 @@ footer {
     
     .right-corner {
         text-align: center;
-        margin-right: 0px;
+        margin-right: 2.5%;
+    }
+    
+    
+    .right-corner p {
+        height: 70px;  
     }
     
     .left {
@@ -405,15 +408,13 @@ footer {
     .right {
         float: left;
     }
-    
-    
+
     .tw {
         margin-left: 0;
     }
 }
 
-
-/*Media quaries for responsive for max width 940px*/
+/*Media queries responsive for max width 940px*/
 
 @media only screen and (max-width: 940px) {
     
@@ -451,7 +452,7 @@ footer {
     }
 }
 
-/*Media quaries for responsive for max width 575px*/ 
+/*Media queries responsive for max width 575px*/ 
 
 @media only screen and (max-width: 575px) {
     
@@ -469,4 +470,48 @@ footer {
         float: none;
         vertical-align: top;
     }
+    
+    .contact {
+        width: 95%;
+        margin: auto;
+    }
+    
+    form {
+        padding: 0 10px;
+    }
+    
+    .input, .msg {
+        float: none;
+        width: auto;
+    }
+    
+    .send-message {
+        width: auto;
+        margin-top: -160px;
+    }
+    
+    .submit {
+        width: 90%;
+    }
+    
+    input {
+        width: 90%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    
+    textarea {
+        width: 90%;
+    }
+    
+    .hero {
+        padding: 0 10px;
+    }
+    
+    .sample-page-button {
+        width: 80%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    
 }
